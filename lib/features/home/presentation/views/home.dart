@@ -1,6 +1,9 @@
 import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/presentation/views/widgets/app_bar.dart';
-import 'package:bookly/features/home/presentation/views/widgets/books_header.dart';
+import 'package:bookly/features/home/presentation/views/widgets/best_seller_item.dart';
+import 'package:bookly/features/home/presentation/views/widgets/features_list.dart';
+import 'package:bookly/core/extensions.dart';
+
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,25 +11,37 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.all(15),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-              CustomAppBar(),
-              SizedBox(
-                height: 10,
+    return Scaffold(
+      body: CustomScrollView(
+        slivers: [
+          SliverToBoxAdapter(
+            child:
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: CustomAppBar(),
               ),
-              BooksHeaderList(),
-              SizedBox(
-                height: 44,
+              const BooksHeaderList(),
+              44.ph,
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Text('Best Seller', style: Styles.titleStyle20),
               ),
-              Text('Best Seller', style: Styles.titleStyle),
-            ],
+              20.ph,
+            ]),
           ),
-        ),
+          SliverFillRemaining(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: ListView.separated(
+                  physics: const NeverScrollableScrollPhysics(),
+                  padding: EdgeInsets.zero,
+                  itemBuilder: (context, index) => const BestSellerItem(),
+                  separatorBuilder: (context, index) => 20.ph,
+                  itemCount: 10),
+            ),
+          ),
+        ],
       ),
     );
   }

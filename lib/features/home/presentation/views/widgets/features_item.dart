@@ -1,31 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class BooksHeaderList extends StatelessWidget {
-  const BooksHeaderList({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.of(context).size.height * .3,
-      child: ListView.separated(
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) {
-          return const ListViewItem();
-        },
-        separatorBuilder: (context, index) => const SizedBox(
-          width: 10,
-        ),
-        itemCount: 5,
-      ),
-    );
-  }
-}
-
-class ListViewItem extends StatelessWidget {
-  const ListViewItem({
+class FeaturesItem extends StatelessWidget {
+  const FeaturesItem({
     Key? key,
   }) : super(key: key);
 
