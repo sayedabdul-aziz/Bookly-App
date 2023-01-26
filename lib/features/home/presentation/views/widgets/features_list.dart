@@ -9,7 +9,8 @@ class BooksHeaderList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       height: MediaQuery.of(context).size.height * .27,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
