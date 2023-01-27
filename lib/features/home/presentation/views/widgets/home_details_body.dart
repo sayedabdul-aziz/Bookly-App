@@ -1,5 +1,4 @@
-import 'package:bookly/core/extensions.dart';
-import 'package:bookly/features/home/presentation/views/widgets/features_item.dart';
+import 'package:bookly/core/utils/extensions.dart';
 import 'package:bookly/features/home/presentation/views/widgets/rating_widget.dart';
 import 'package:bookly/features/home/presentation/views/widgets/samilar_books.dart';
 import 'package:flutter/material.dart';
@@ -18,10 +17,10 @@ class HomeDetailsBodyView extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(
-                height: 200,
-                child: FeaturesItem(),
-              ),
+              // const SizedBox(
+              //   height: 200,
+              //   child: FeaturesItem(),
+              // ),
               30.ph,
               const Text(
                 'The Jungle Book',

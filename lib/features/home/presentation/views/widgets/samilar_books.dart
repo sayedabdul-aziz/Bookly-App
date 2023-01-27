@@ -1,4 +1,4 @@
-import 'package:bookly/core/extensions.dart';
+import 'package:bookly/core/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';
@@ -34,7 +34,9 @@ class SamillarBooksList extends StatelessWidget {
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return const FeaturesItem();
+          return null;
+
+          //return const FeaturesItem();
         },
         separatorBuilder: (context, index) => const SizedBox(
           width: 10,
