@@ -18,7 +18,7 @@ class FeaturesBookBuilder extends StatelessWidget {
         if (state is FeaturesBooksSuccess) {
           return Container(
             padding: const EdgeInsets.symmetric(horizontal: 10),
-            height: MediaQuery.of(context).size.height * .24,
+            height: MediaQuery.of(context).size.height * .27,
             child: ListView.separated(
               physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,

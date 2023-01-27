@@ -20,6 +20,7 @@ class NewestBookBuilder extends StatelessWidget {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: ListView.separated(
+                shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 padding: EdgeInsets.zero,
                 itemBuilder: (context, index) =>

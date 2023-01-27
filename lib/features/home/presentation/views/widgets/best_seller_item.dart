@@ -19,7 +19,7 @@ class NewestItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).push(AppRouter.kHomeDetailsView);
+        GoRouter.of(context).push(AppRouter.kHomeDetailsView, extra: model);
       },
       child: Row(
         children: [
@@ -27,6 +27,7 @@ class NewestItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(8.0),
             child: CachedNetworkImage(
               height: 120,
+              width: 90,
               imageUrl: model.volumeInfo!.imageLinks!.thumbnail.toString(),
               fit: BoxFit.cover,
               errorWidget: (context, url, error) =>
@@ -51,7 +52,7 @@ class NewestItem extends StatelessWidget {
                 Row(
                   children: const [
                     Text(
-                      '19,99 \$',
+                      'Free',
                       style: Styles.titleStyle20,
                     ),
                     Spacer(),

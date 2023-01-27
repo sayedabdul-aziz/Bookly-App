@@ -11,7 +11,6 @@ class FeaturesItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      fit: StackFit.passthrough,
       alignment: Alignment.bottomRight,
       children: [
         ClipRRect(
@@ -19,6 +18,8 @@ class FeaturesItem extends StatelessWidget {
           child: CachedNetworkImage(
             imageUrl: imageUrl,
             fit: BoxFit.cover,
+            height: MediaQuery.of(context).size.height * .27,
+            width: 140,
             errorWidget: (context, url, error) =>
                 const Center(child: Icon(Icons.error)),
           ),

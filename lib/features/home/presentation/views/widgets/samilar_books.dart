@@ -2,10 +2,10 @@ import 'package:bookly/core/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';
-import 'features_item.dart';
+import '../builder/similar_books.dart';
 
-class SamilarBooks extends StatelessWidget {
-  const SamilarBooks({super.key});
+class SamilarBooksBuilder extends StatelessWidget {
+  const SamilarBooksBuilder({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,31 +18,8 @@ class SamilarBooks extends StatelessWidget {
               style: Styles.titleStyle16.copyWith(fontWeight: FontWeight.bold)),
         ),
         20.ph,
-        const SamillarBooksList()
+        const SimilarBooksBuilder()
       ],
-    );
-  }
-}
-
-class SamillarBooksList extends StatelessWidget {
-  const SamillarBooksList({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.of(context).size.height * .20,
-      child: ListView.separated(
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) {
-          return null;
-
-          //return const FeaturesItem();
-        },
-        separatorBuilder: (context, index) => const SizedBox(
-          width: 10,
-        ),
-        itemCount: 5,
-      ),
     );
   }
 }
