@@ -1,7 +1,7 @@
-import 'package:bookly/core/utils/styles.dart';
-import 'package:bookly/features/home/presentation/views/widgets/app_bar.dart';
-import 'package:bookly/features/home/presentation/views/builder/features_list.dart';
-import 'package:bookly/core/utils/extensions.dart';
+import 'package:ebookia/core/utils/styles.dart';
+import 'package:ebookia/features/home/presentation/views/widgets/app_bar.dart';
+import 'package:ebookia/features/home/presentation/views/builder/features_list.dart';
+import 'package:ebookia/core/utils/extensions.dart';
 
 import 'package:flutter/material.dart';
 

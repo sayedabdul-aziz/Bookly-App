@@ -1,9 +1,9 @@
 import 'package:dartz/dartz.dart';
 
-import 'package:bookly/core/errors/failures.dart';
-import 'package:bookly/core/utils/api_servers.dart';
-import 'package:bookly/features/home/data/models/book_model/book_model.dart';
-import 'package:bookly/features/home/data/repos/home_repos.dart';
+import 'package:ebookia/core/errors/failures.dart';
+import 'package:ebookia/core/utils/api_servers.dart';
+import 'package:ebookia/features/home/data/models/book_model/book_model.dart';
+import 'package:ebookia/features/home/data/repos/home_repos.dart';
 import 'package:dio/dio.dart';
 
 class HomeRepoImp extends HomeRepo {

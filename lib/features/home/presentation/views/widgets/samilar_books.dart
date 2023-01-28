@@ -1,4 +1,4 @@
-import 'package:bookly/core/utils/extensions.dart';
+import 'package:ebookia/core/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';

@@ -1,7 +1,7 @@
-import 'package:bookly/core/utils/extensions.dart';
-import 'package:bookly/core/utils/routers.dart';
-import 'package:bookly/features/home/data/models/book_model/book_model.dart';
-import 'package:bookly/features/home/presentation/views/widgets/rating_widget.dart';
+import 'package:ebookia/core/utils/extensions.dart';
+import 'package:ebookia/core/utils/routers.dart';
+import 'package:ebookia/features/home/data/models/book_model/book_model.dart';
+import 'package:ebookia/features/home/presentation/views/widgets/rating_widget.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';

@@ -1,10 +1,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.bookly">
+    package="com.example.ebookia">
+    <queries>
+    <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="https" />
+    </intent>
+</queries>
    <application
-        android:label="bookly"
+        android:label="ebookia"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
+        android:usesCleartextTraffic="true"
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
@@ -31,4 +39,5 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+   
 </manifest>

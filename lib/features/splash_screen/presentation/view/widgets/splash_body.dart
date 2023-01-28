@@ -1,6 +1,6 @@
-import 'package:bookly/core/utils/extensions.dart';
-import 'package:bookly/core/utils/routers.dart';
-import 'package:bookly/features/splash_screen/presentation/view/widgets/sliding_text.dart';
+import 'package:ebookia/core/utils/extensions.dart';
+import 'package:ebookia/core/utils/routers.dart';
+import 'package:ebookia/features/splash_screen/presentation/view/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

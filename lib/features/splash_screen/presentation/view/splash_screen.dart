@@ -1,4 +1,4 @@
-import 'package:bookly/features/splash_screen/presentation/view/widgets/splash_body.dart';
+import 'package:ebookia/features/splash_screen/presentation/view/widgets/splash_body.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {

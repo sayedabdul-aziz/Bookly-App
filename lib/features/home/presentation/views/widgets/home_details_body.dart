@@ -1,7 +1,7 @@
-import 'package:bookly/core/utils/extensions.dart';
-import 'package:bookly/features/home/presentation/views/widgets/features_item.dart';
-import 'package:bookly/features/home/presentation/views/widgets/rating_widget.dart';
-import 'package:bookly/features/home/presentation/views/widgets/samilar_books.dart';
+import 'package:ebookia/core/utils/extensions.dart';
+import 'package:ebookia/features/home/presentation/views/widgets/features_item.dart';
+import 'package:ebookia/features/home/presentation/views/widgets/rating_widget.dart';
+import 'package:ebookia/features/home/presentation/views/widgets/samilar_books.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';
@@ -38,7 +38,7 @@ class HomeDetailsBodyView extends StatelessWidget {
               20.ph,
               const RatingWidget(),
               30.ph,
-              const CustomButton(),
+              CustomButton(url: model.volumeInfo?.previewLink ?? ''),
               44.ph,
               const SamilarBooksSection()
             ],

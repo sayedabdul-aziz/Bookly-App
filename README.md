@@ -1,4 +1,4 @@
-# bookly
+# ebookia
 
 A new Flutter project.
 
