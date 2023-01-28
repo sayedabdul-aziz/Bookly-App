@@ -3,7 +3,6 @@ import 'package:ebookia/features/search/presentation/views/widgets/search_result
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';
-import '../../../../home/data/models/book_model/book_model.dart';
 import 'custom_search_box.dart';
 
 class SearchViewBody extends StatelessWidget {
@@ -19,7 +18,7 @@ class SearchViewBody extends StatelessWidget {
           30.ph,
           const Text('Search results ', style: Styles.titleStyle18),
           20.ph,
-          const SearchResultList(model: BookModel()),
+          const SearchResultList(),
         ],
       ),
     );
