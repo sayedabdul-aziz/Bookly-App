@@ -1,3 +1,4 @@
+import 'package:bookly/core/utils/extensions.dart';
 import 'package:bookly/core/utils/routers.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -9,14 +10,12 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 5.0, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 23.0, vertical: 15),
       child: Row(
         children: [
-          const Text(
-            'Bookly',
-            style: TextStyle(
-              fontSize: 23,
-            ),
+          Image.asset(
+            "logo".toPng,
+            width: 120,
           ),
           const Spacer(),
           IconButton(

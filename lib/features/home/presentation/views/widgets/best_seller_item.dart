@@ -28,7 +28,7 @@ class NewestItem extends StatelessWidget {
             child: CachedNetworkImage(
               height: 120,
               width: 90,
-              imageUrl: model.volumeInfo!.imageLinks!.thumbnail.toString(),
+              imageUrl: model.volumeInfo!.imageLinks?.thumbnail ?? '',
               fit: BoxFit.cover,
               errorWidget: (context, url, error) =>
                   const Center(child: Icon(Icons.error)),
@@ -40,13 +40,13 @@ class NewestItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  model.volumeInfo!.title ?? '',
+                  model.volumeInfo?.title ?? '',
                   maxLines: 2,
                   style: Styles.titleStyle20
                       .copyWith(fontWeight: FontWeight.normal),
                 ),
                 3.ph,
-                Text(model.volumeInfo!.authors![0],
+                Text(model.volumeInfo!.authors?[0] ?? '',
                     style: Styles.titleStyle14.copyWith(color: Colors.white60)),
                 3.ph,
                 Row(

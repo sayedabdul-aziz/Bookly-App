@@ -1,3 +1,4 @@
+import 'package:bookly/core/utils/extensions.dart';
 import 'package:bookly/core/utils/routers.dart';
 import 'package:bookly/features/splash_screen/presentation/view/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,11 @@ class _SplashBodyState extends State<SplashBody>
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Bookly', style: Theme.of(context).textTheme.displayMedium),
+          Image.asset(
+            "logo".toPng,
+            width: MediaQuery.of(context).size.width * .6,
+          ),
+          7.ph,
           SlidingText(sliding: _sliding),
         ],
       ),

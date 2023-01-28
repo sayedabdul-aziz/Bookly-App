@@ -14,7 +14,7 @@ abstract class Styles {
   static const titleStyle16 = TextStyle(
     fontSize: 16,
   );
-  static const titleStyle30 = TextStyle(
-    fontSize: 30,
+  static const titleStyle25 = TextStyle(
+    fontSize: 25,
   );
 }

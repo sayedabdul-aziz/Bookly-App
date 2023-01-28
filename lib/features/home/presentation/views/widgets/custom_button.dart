@@ -24,7 +24,7 @@ class CustomButton extends StatelessWidget {
                     bottomLeft: Radius.circular(12)),
               ),
               child: Text(
-                '19,99 \$',
+                'Free',
                 textAlign: TextAlign.center,
                 style: Styles.titleStyle20.copyWith(color: Colors.black),
               ),

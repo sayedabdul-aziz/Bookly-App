@@ -20,8 +20,7 @@ class SimilarBooksBuilder extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return SimilarItem(
-                  imageUrl:
-                      state.books[index].volumeInfo!.imageLinks!.smallThumbnail,
+                  model: state.books[index],
                 );
               },
               separatorBuilder: (context, index) => const SizedBox(

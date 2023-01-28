@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles.dart';
 import '../builder/similar_books.dart';
 
-class SamilarBooksBuilder extends StatelessWidget {
-  const SamilarBooksBuilder({super.key});
+class SamilarBooksSection extends StatelessWidget {
+  const SamilarBooksSection({super.key});
 
   @override
   Widget build(BuildContext context) {

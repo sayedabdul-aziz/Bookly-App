@@ -8,3 +8,7 @@ extension EmptyPadding on num {
         width: toDouble(),
       );
 }
+
+extension ImagePath on String {
+  String get toPng => "assets/$this.png";
+}

@@ -24,9 +24,7 @@ class FeaturesBookBuilder extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return FeaturesItem(
-                  imageUrl: state
-                      .featuresBooks[index].volumeInfo!.imageLinks!.thumbnail
-                      .toString(),
+                  model: state.featuresBooks[index],
                 );
               },
               separatorBuilder: (context, index) => const SizedBox(

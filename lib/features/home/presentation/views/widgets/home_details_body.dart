@@ -22,14 +22,12 @@ class HomeDetailsBodyView extends StatelessWidget {
             children: [
               SizedBox(
                 height: 200,
-                child: FeaturesItem(
-                    imageUrl:
-                        model.volumeInfo?.imageLinks?.smallThumbnail ?? ''),
+                child: FeaturesItem(model: model),
               ),
               30.ph,
               Text(
                 model.volumeInfo!.title ?? '',
-                style: Styles.titleStyle30,
+                style: Styles.titleStyle25,
                 textAlign: TextAlign.center,
               ),
               10.ph,
@@ -42,7 +40,7 @@ class HomeDetailsBodyView extends StatelessWidget {
               30.ph,
               const CustomButton(),
               44.ph,
-              const SamilarBooksBuilder()
+              const SamilarBooksSection()
             ],
           ),
         ),
